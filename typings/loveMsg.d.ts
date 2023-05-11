@@ -1,5 +1,6 @@
 // 定义天气返回值类型 https://www.tianapi.com/apiview/72
 
+// 预警
 interface IAlarmlistItemProps {
   /** 预警省份 */
   province: string
@@ -14,6 +15,8 @@ interface IAlarmlistItemProps {
   /** 预警时间 */
   time: string
 }
+
+// 天气
 interface IWeatherResponseProps {
   /** 2021-12-18 */
   date: string
@@ -43,6 +46,7 @@ interface IWeatherResponseProps {
   alarmlist: IAlarmlistItemProps[]
 }
 
+// 诗歌
 interface IVerseProps {
   /** 长安白日照春空，绿杨结烟垂袅风。 */
   content: string
