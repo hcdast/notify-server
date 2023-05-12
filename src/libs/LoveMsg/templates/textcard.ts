@@ -39,8 +39,7 @@ export const textCardTemplate = (data: TextCardTemplateProps) => {
     const lunar_festival_info = lunar_festival ? `| ${lunar_festival}` : ''
     const jieqi_info = jieqi ? `| ${jieqi}` : ''
 
-    description += `${festival_info}
-📆农历 | ${lubarmonth}${lunarday} ${lunar_festival_info} ${jieqi_info}\n`
+    description += `${festival_info} 📆农历 | ${lubarmonth}${lunarday} ${lunar_festival_info} ${jieqi_info}\n`
   }
 
   // 黄历信息
@@ -59,9 +58,9 @@ export const textCardTemplate = (data: TextCardTemplateProps) => {
   }
 
   description += `\n🖼今日天气状况：
-⛅天气：${weather}
-🎐${wind}：${windsc}
-🌡温度：${lowest} ~ ${highest}\n`
+  ⛅天气：${weather}
+  🎐${wind}：${windsc}
+  🌡温度：${lowest} ~ ${highest}\n`
 
   if (weather.includes('雨')) description += `🌧降雨量：${pcpn}mm\n`
 
